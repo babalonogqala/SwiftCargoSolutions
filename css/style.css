@@ -24,6 +24,7 @@ ul{
 a{
     text-decoration: none;
 }
+
 /* heading sections */
 .showCase{
     background: url(../images/home/homepage.jpg)no-repeat center center/cover;
@@ -31,6 +32,7 @@ a{
     height: 100vh;
     position: relative;
 }
+
 /* overlay(darkning)*/
 .showCase::before{
     content: "";
@@ -41,6 +43,7 @@ a{
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
 }
+
 /* navbar */
 .bgPrimary{
     color: #0000ff;
@@ -53,10 +56,11 @@ a{
     height: 80px;
     opacity: 0.9;
 }
-.navBar h2{
-    padding: 20px 0 0 10px; 
-    color: #333;
-    text-align: center;
+.logo{
+  width :10vw; 
+  height: 10vh;
+  object-fit: cover;
+  margin: 10px 0 10px 80px;
 }
 .navBar ul{
     display: flex;
@@ -100,9 +104,15 @@ a{
 .btn{
     background: #4646fa;
     padding: 10px 20px;
+    margin-bottom: 10px;
     color: #ffffff;
-    border-radius: 5%;
-    
+}
+.btn2{
+    background: #4646fa;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    width: 30%;
 }
 .btn:hover{
     opacity: 0.8;
@@ -185,7 +195,7 @@ a{
 .cases .column{
     flex: 23%;
     width: 23%;
-    padding: 1px;
+    padding: 0.1%;
 }
 .cases .column img:hover {
     opacity: 0.8;
@@ -231,85 +241,429 @@ a{
 .links a:hover{
     border-bottom: 1px solid #0000ff;
 }
+
+/* About page */
+/* heading sections */
+.header {
+    background: url(../images/about/plane.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+/* overlay(darkning)*/
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+/* navbar */
+.navBar2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    opacity: 0.9;
+}
+.navBar2 ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+.navBar2 ul a {
+    padding: 0 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.navBar2 ul a.active {
+    color: #0000ff;
+}
+.navBar2 ul a:hover {
+    border-bottom: 1px solid #0000ff;
+}
+/* about us info */
+.flexColumns2 .row2 {
+    display: flex;
+    width: 100;
+}
+.flexColumns2 * {
+    z-index: 1;
+}
+.flexColumns2 .column {
+    display: flex;
+    width: 100%;
+    flex: 1;
+}
+.flexColumns2 .column .column1,
+.flexColumns2 .column .column2 {
+    height: 100%;
+}
+.flexColumns2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.flexColumns2 .column .column2 {
+    background: rgb(236, 236, 236);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+}
+/* Objectives */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* width: 90%;
+    margin: auto; */
+}
+.card2{
+    width: 525px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+} 
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.content2 h2{
+    font-size: 28px;
+    margin-bottom: 6px;
+    /* padding: 5px; */
+    text-align: center;
+}
+
+.content2 p{
+    padding: 10px;
+    color: #777;
+    line-height: 1.3;
+}
+.content2{
+    padding: 16px;
+}
+
+/* Team section */
+.team{
+    background: #eeeeee;
+} 
+.icons .teamItems {
+    display: flex;
+    text-align: center;
+    padding: 20px 20px 0 90px;
+}
+.teamItems img{
+    color: #ffffff;
+    text-align: center;
+    height: 45vh;
+    width: 60vh;
+    padding: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* /services page */
+.wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+}
+.contentBox{
+    margin-top: 30px;
+    width: 1000px; 
+    display: flex;  
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    margin: 10px 4px;
+    transition: 0.3s;
+} 
+.card h2{
+    text-align: center;
+}
+.wrap a{
+    color: #333;
+}
+
+/* blog page */
+.phone img{
+    width: 50vw;
+     object-fit: cover;
+}
+/* content page */
+.callbackForm {
+    width: 100%;
+    padding: 30px 0;
+}
+
+.callbackForm label {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.callbackForm .formControl {
+    margin-bottom: 15px;
+}
+
+.callbackForm input {
+    width: 100%;
+    padding: 3px;
+    height: 30px;
+    border: 1px solid #f5f5f5f5;
+
+}
+
+.callbackForm .btn {
+    padding: 12px 0;
+    margin-top: 20px;
+}
+
+.callbackForm h2 {
+    font-weight: 300;
+    color: #333;
+    padding-bottom: 10px;
+}
+
+.callbackForm input:focus {
+    outline-color: #28a745;
+}
+.light {
+    background-color: lightgray;
+    width: 100%;
+}
+/* blogPost */
+.service{
+    padding: 20px;
+}
 /* media queries */
+/* home page */
 @media (min-width:2000px) {
-    .navBar{
+    .navBar {
         height: 200px;
     }
-    .navBar h2{
+    .logo{
         padding-top: 50px;
         padding-left: 200px;
         font-size: 3rem;
     }
+
     .navBar ul {
         padding-right: 200px;
         font-size: 2.8rem;
     }
-    .content{
+
+    .content {
         font-size: 2.7rem;
     }
-    .content h1{
+
+    .content h1 {
         font-size: 4.1rem;
     }
+
     .content p {
-            font-size: 2rem;
+        font-size: 2rem;
     }
+
     .icons .flexItems {
         min-width: 100%;
         padding: 20px 280px;
     }
-    .flexItems > div{
+
+    .flexItems>div {
         padding-left: 30px;
     }
 }
-@media(max-width:1000px){
-    .icons .flexItems{
+
+@media(max-width:1000px) {
+    .icons .flexItems {
         flex-direction: column;
     }
-    .flexColumns .row{
+
+    .flexColumns .row {
         flex-direction: column;
     }
+
     .cases .row {
         flex-direction: column;
         padding: 10px;
-        }
-    .cases .column{
+    }
+
+    .cases .column {
         width: 100%;
-        flex:100%;
+        flex: 100%;
+    }   
+    .team{
+        width: 100%;
+    }  
+    .icons .teamItems {
+            display: flex;
+            flex-direction: column;
+    }
+    .teamItems img {
+            margin: 0 auto;
+            width: 30vw;
+            height: 20vh;
+    }
+    .navBar .logo{
+        width: 15vw;
+        height: auto;
+        margin: 0;
+        
     }
 }
-@media (max-width:770px) {
-    .navBar{
+
+@media (max-width:870px) {
+.navBar {
         height: 150px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+.logo {
+        width: 20vw;
+        height: 30vh;
+    }
+    .card2 {
+            width: 400px;
+            
+        }
 }
+
+
 @media (max-width: 425px) {
-    .navBar{
+    .navBar {
         height: 220px;
     }
+
     .navBar ul {
         flex-direction: column;
     }
-    .showCase .content{
+
+    .showCase .content {
         padding-bottom: 260px;
         line-height: normal;
     }
-    .flexColumns .row { 
+
+    .flexColumns .row {
         width: 100;
         padding: 5px;
         margin-top: -220px;
     }
+
     .flexColumns .column .column2 {
-       padding: 20px;
-        }
-    .footer{
+        padding: 20px;
+    }
+
+    .footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 600px;
-        
+
     }
+}
+@media (max-width:960px) {
+    .wrap {
+        padding: 25px;
+    }
+
+    .wrap h2 {
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .contentBox {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card {
+        min-width: 500px;
+        margin: 10px auto;
+    }
+    .header .logo {
+        width: 100%;
+        height: 100%;
+    }
+    .flexColumns2 .row2{
+        flex-direction: column;        
+    }
+    .column1 img{
+        width: 100vw;
+    }
+
+}
+
+@media (max-width:600px) {
+    .navBar .logo{
+        margin: 0;
+        padding: 0;
+        width: 15vw;
+        height: auto;
+    }
+    .navBar ul{
+        padding-right: 80px;
+    }
+    .logo {
+          padding: 10px 80px;
+            margin: 0;
+        }
+    .navBar2{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.1rem;
+    }
+    .navBar2 ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .wrap {
+            padding: 25px;
+        }
+    .wrap h2 {
+            font-weight: 600;
+            text-align: center;
+        }
+    .contentBox {
+            flex-direction: column;
+            width: 100%;
+        }
+    .card {
+            min-width: 200px;
+            margin: 10px auto;
+        }
+    
+
+}
+@media (max-width:370px) {
+    .navBar2 ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .flexColumns2 .column .column2 {
+        padding: 20px;
+    }
+    
 }

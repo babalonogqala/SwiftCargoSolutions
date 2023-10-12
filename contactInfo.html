@@ -10,47 +10,77 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/png" sizes="32x32" href="images/home/icon.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Welcome| SwiftCargo Solutions</title>
 </head>
 <body>
-    <!-- header section -->
-    <section class="header">
-        <a href="home.html"><img src="images/home/logo.png" alt="" class="logo"></a>
-        <div class="navBar">
+<!-- header section -->
+<header class="header">
+    <div class="navBar2">
+        <a href="home.html" ><img src="images/home/logo.png" alt="" class="logo">
             <ul>
+             <li><a href="home.html"></a></li> 
                 <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">services</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contactInfo.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html" >Blog</a></li>
+                <li><a href="contactInfo.html" class="active">Contact</a></li>
             </ul>
-        </div>
+    </div>
+    <div class="content">
         <h1>Contact Us</h1>
-    </Section>
+    </div>
+</header>
     <main>
-
+        <section class="flexColumns2 ">
+            <div class="row2">
+                <div class="column">
+                    <div class="column1 ">
+                        <img src="images/about/contact.jpg" alt="">
+                    </div>
+                </div>
+                <div class="column ">
+                    <div class="column2 light ">
+                        <form action="" class="callbackForm">
+                            <h2>Callback Request</h2>
+                            <div class="formControl">
+                                <label for="">Name:</label>
+                                <input type="text">
+                                <label for="">email:</label>
+                                <input type="email">
+                                <label for="">phone:</label>
+                                <input type="number">
+                            </div>
+                        </form>
+                        <a href="" class="btn">
+                            <i class="fas fa-chevron-right"></i>
+                            Send
+                        </a>
+                    </div>
+                </div>
+            </div>
     </main>
 <!-- footer section -->
 <footer class="footer">
     <div class="social">
         <a href="https://www.linkedin.com/in/babalo-nogqala/"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href=""><i class="fab fa-whatsapp fa-2x"></i></a>
+        <a href="https://wa.me/0788147278" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
+    </div>
+    <div class="contactUs">
+        <a href="contactInfo.html" class="btn">Contact us</a>
         <p>Copyright & copy 2023</p>
     </div>
-    <div class="home">
-        <a href="home.html"><img src="images/home/logo.png" alt="" class="logo"></a>
-    </div>
     <div class="links">
-        <h3>Useful links</h3>
+        <h3>Useful links:</h3>
         <ul>
             <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="service.html">Service</a></li>
+            <li><a href="about.html">About </a></li>
+            <li><a href="services.html">Service</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contactInfo.html">Contact</a></li>
         </ul>
     </div>
+
 </footer>
     
 </body>
